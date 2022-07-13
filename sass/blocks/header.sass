@@ -1,54 +1,78 @@
 .navbar
   background-color: #fff
+
   &-top
     display: flex
     align-items: center
     justify-content: space-between
     padding-top: 40px
     padding-bottom: 40px
+
   &__search
     margin-right: auto
     margin-left: 108px
 
+  &-bottom
+    background-color: #0A223DFF
+
+  &-menu
+    list-style-type: none
+    margin: 0
+    display: flex
+    padding: 31px 0
+    align-items: center
+    justify-content: space-between
+
+    &__link
+      color: #fff
+      text-decoration: none
+      text-transform: uppercase
+      font-weight: 700
+      font-size: 14px
+      line-height: 18px
+
+  .logo
+    width: 177px
+
   .search
-      display: flex
-      position: relative
-      overflow: hidden
-      height: 40px
-      border-radius: 6px
+    display: flex
+    position: relative
+    overflow: hidden
+    height: 40px
+    border-radius: 6px
 
-      &-input
-        width: 350px
-        height: 100%
-        padding-left: 23px
-        font-size: 12px
-        background-color: #f5f5f5
-        line-height: 15px
-        padding-right: 75px
-        color: #333333
-        border: none
+    &-input
+      width: 350px
+      height: 100%
+      padding-left: 23px
+      font-size: 12px
+      background-color: #f5f5f5
+      line-height: 15px
+      padding-right: 75px
+      color: #333333
+      border: none
 
-      &-button
-        position: absolute
-        top: 0
-        right: 0
-        border: none
-        width: 65px
-        height: 100%
-        background-color: #EC1F46FF
+    &-button
+      position: absolute
+      top: 0
+      right: 0
+      border: none
+      width: 65px
+      height: 100%
+      background-color: #EC1F46FF
 
   .user
-      display: flex
-      align-items: center
-      text-decoration: none
+    display: flex
+    align-items: center
+    text-decoration: none
 
-      &-avatar
-        width: 40px
-        height: 40px
-        object-fit: cover
+    &-avatar
+      width: 40px
+      height: 40px
+      object-fit: cover
 
-      &-name
-        font-size: 14px
-        line-height: 18px
-        color: #333333
-        margin-left: 18px
+    &-name
+      font-size: 14px
+      line-height: 18px
+      color: #333333
+      margin-left: 18px

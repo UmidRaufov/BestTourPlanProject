@@ -12,6 +12,28 @@
   margin-right: auto;
   margin-left: 108px;
 }
+.navbar-bottom {
+  background-color: #0a223d;
+}
+.navbar-menu {
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  padding: 31px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-menu__link {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+}
+.navbar .logo {
+  width: 177px;
+}
 .navbar .search {
   display: flex;
   position: relative;
