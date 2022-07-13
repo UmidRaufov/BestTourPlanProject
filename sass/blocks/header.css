@@ -8,6 +8,9 @@
   padding-top: 40px;
   padding-bottom: 40px;
 }
+.navbar__menu-button {
+  display: none;
+}
 .navbar__search {
   margin-right: auto;
   margin-left: 108px;
