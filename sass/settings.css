@@ -4,5 +4,10 @@
 * body {
   font-family: "Mulish", sans-serif;
 }
+* .container {
+  max-width: 1110px;
+  margin: auto;
+  border: 1px solid red;
+}
 
 /*# sourceMappingURL=settings.css.map */
