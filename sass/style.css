@@ -22,7 +22,7 @@
   padding-top: 40px;
   padding-bottom: 40px;
 }
-.navbar__menu-button {
+.navbar-top__menu-button {
   display: none;
 }
 .navbar__search {
@@ -419,7 +419,6 @@ template {
   }
   .container .navbar__search {
     margin-left: auto;
-    margin-right: 340px;
   }
   .container .navbar-menu {
     padding-top: 22px;
@@ -428,6 +427,9 @@ template {
   .container .navbar-menu__link {
     font-size: 12px;
     line-height: 15px;
+  }
+  .container .search__input {
+    max-width: 340px;
   }
 }
 @media (max-width: 992px) and (max-width: 768px) {
@@ -446,6 +448,7 @@ template {
     width: 16px;
     height: 11px;
     align-items: center;
+    padding: 0;
     justify-content: space-between;
     flex-direction: column;
     cursor: pointer;
