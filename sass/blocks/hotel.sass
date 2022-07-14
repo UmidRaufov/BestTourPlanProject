@@ -1,13 +1,18 @@
 .hotel
   padding-top: 23px
   padding-bottom: 70px
+
   &-grid
     padding-bottom: 70px
+    display: flex
+    justify-content: space-between
+
   &-info
     display: flex
     align-items: center
     padding-bottom: 20px
     justify-content: space-between
+
     &__name
       margin-top: 4px
       margin-bottom: 0
@@ -29,6 +34,11 @@
   &-description
     font-size: 12px
     line-height: 15px
+
+  &-right
+    display: flex
+    justify-content: space-between
+    flex-direction: column
 
 .offer
   font-weight: 600
@@ -65,6 +75,7 @@
   width: 100%
   position: relative
   border-radius: 8px
+
   &::after
     content: ''
     position: absolute
@@ -74,6 +85,7 @@
 
 .slider
   width: 728px
+
   &-button
     position: absolute
     z-index: 99
@@ -84,7 +96,97 @@
     border: none
     cursor: pointer
     transform: translateY(-50%)
+
     &-next
       right: 18px
+
     &-prev
       left: 18px
+
+.booking
+  background-color: #0A223DFF
+  color: #FFFFFF
+  max-width: 350px
+  min-height: 210px
+  border-radius: 8px
+  padding: 28px
+
+  &__info
+    display: flex
+    justify-content: space-between
+    margin-bottom: 9px
+
+  &__price
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+  &__start
+    font-style: normal
+    font-weight: 400
+    font-size: 10px
+    line-height: 14px
+
+  &__pricetag
+    font-weight: 800
+    font-size: 24px
+    line-height: 33px
+
+  &__per-room
+    font-weight: 400
+    font-size: 12px
+    line-height: 16px
+
+  &__room
+    margin-top: 4px
+
+  &__text
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 8px
+
+  &__description
+    font-weight: 400
+    font-size: 12px
+    line-height: 16px
+    margin-left: 9px
+
+  &__call-center
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 17px
+
+  &__heading
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+
+  &__number
+    display: flex
+    align-items: center
+    justify-content: space-between
+    color: inherit
+    text-decoration: none
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+
+  &_num
+    margin-left: 8px
+
+  &__button
+    width: 100%
+    min-height: 45px
+    background-color: #EC1F46FF
+    color: #FFFFFF
+    border: none
+    cursor: pointer
+    border-radius: 4px
+
+.map
+  width: 347px
+  height: 213px
+  margin-top: 27px
+  background-color: #000
