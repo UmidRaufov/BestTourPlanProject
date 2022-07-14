@@ -3,6 +3,7 @@
 }
 * body {
   font-family: "Mulish", sans-serif;
+  background-color: whitesmoke;
 }
 * .container {
   max-width: 1110px;
@@ -93,6 +94,26 @@
   line-height: 18px;
   color: #333333;
   margin-left: 18px;
+}
+
+.breadcrumb-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 18px 0;
+  margin: 0;
+}
+.breadcrumb-list__item {
+  font-size: 10px;
+  line-height: 13px;
+}
+.breadcrumb-list__item:not(:last-child)::after {
+  content: " / ";
+  margin-right: 4px;
+}
+.breadcrumb-list__link {
+  text-decoration: none;
+  color: inherit;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -404,6 +425,71 @@ template {
   display: none;
 }
 
+.hotel {
+  padding-top: 23px;
+  padding-bottom: 70px;
+}
+.hotel-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hotel-info__name {
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+.hotel-info__offer {
+  margin-left: 14px;
+  margin-top: 4px;
+}
+.hotel-name {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+.hotel-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.hotel-description {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.offer {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 13px;
+  background-color: #ec1f46;
+  color: #FFFFFF;
+  padding: 3px 9px;
+  border-radius: 3px;
+}
+
+.stars {
+  flex-basis: 100%;
+}
+
+.rating {
+  width: 65px;
+  height: 45px;
+  text-align: center;
+  background-color: #ec1f46;
+  border-radius: 4px;
+  color: #FFFFFF;
+}
+.rating__text {
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
+}
+.rating__counter {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -459,6 +545,25 @@ template {
     width: 16px;
     height: 1px;
     background-color: #333333;
+  }
+  .stars {
+    flex-basis: content;
+  }
+  .hotel-name {
+    flex-basis: 100%;
+  }
+  .hotel-wrapper {
+    justify-content: space-between;
+  }
+  .hotel-info__text {
+    width: 100%;
+  }
+  .hotel-info__rating {
+    display: none;
+  }
+  .hotel-info__offer {
+    order: -1;
+    margin: 0;
   }
 }
 @media (max-width: 576px) {
